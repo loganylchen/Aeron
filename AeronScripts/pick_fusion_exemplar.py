@@ -1,5 +1,4 @@
-#!/usr/bin/python
-
+#! /usr/bin/env python
 import sys
 
 fusion_file = sys.argv[1]
