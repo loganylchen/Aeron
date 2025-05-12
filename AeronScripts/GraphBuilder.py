@@ -191,6 +191,8 @@ for transcript in transcripts:
     cluster, cchromosome = gb.DefineCluster(start, end, chromosome)
     ndst,nden,chrnod = gb.getNodePositions(cluster, cchromosome)	
     nodeid=gb.getNodeID(pg, ndst, nden, ex)
+    print(ex,start,end,chromosome,cluster,cchromosome,ndst,nden,chrnod,nodeid)
+    print(len(nodes),len(connections))
     nodes, connections = gb.getNodeConnections(nodeid, ndst, nden, chrnod, fasta, nodes, connections)
 
 for i in nodes:
