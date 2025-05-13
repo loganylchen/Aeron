@@ -136,7 +136,7 @@ class GraphBuild():
 
 		for i in range(0, len(nodeid)):
 			chromo = chrnod[i]
-			key=">chr"+chromo
+			key=">"+chromo
 			if(key in Sequences.keys()):
 				sequence = Sequences[key]			
 				length = (nden[i]-ndst[i])+1
